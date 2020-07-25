@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>Login and SignUp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ML2">
+      <div class="from-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+          <button type="button" class="toggle-btn" onclick="signup()">Sign Up</button>
+        </div>
+        <div class="social-icons">
+        <img src="facebook-512.png">
+        <img src="download.png">
+      </div>
+      <from id="login" class="input-group">
+      <input type="text" class="input-field" placeholder="User ID" required>
+      <input type="text" class="input-field" placeholder="Password" required>
+      <input type="checkbox" class="check-box"><span>Forgot Password</span>
+      <button type="submit" class="submit-btn">Log In</button>
+      </from>
+      <from id="signup" class="input-group">
+      <input type="text" class="input-field" placeholder="Name" required>
+      <input type="text" class="input-field" placeholder="Email ID" required>
+      <input type="text" class="input-field" placeholder="User ID" required>
+      <input type="text" class="input-field" placeholder="Password" required>
+      <input type="text" class="input-field" placeholder="Phone Number" required>
+      <input type="checkbox" class="check-box"><span>I Agree To The Terms & Conditions</span>
+      <button type="submit" class="submit-btn">Sign Up</button>
+      </from>
+
+      </div>
+    </div>
+
+    <script>
+    var x = document.getElementById("login");
+    var y = document.getElementById("signup");
+    var z = document.getElementById("btn");
+
+    function signup(){
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+    }
+    function login(){
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0px";
+    }
+    </script>
+
+</body>
+</html>
